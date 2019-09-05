@@ -7,21 +7,21 @@ public class Calculator {
 	        // nextDouble() reads the next double from the keyboard
 	        double first = reader.nextDouble();
 	        double second = reader.nextDouble();
-	        System.out.print("Enter an operator (+, -, *, /): ");
+	        System.out.print("Enter an operator (1='add', 2='Sub', 3='mul', 4='div'): ");
 	        char operator = reader.next().charAt(0);
 	        double result;
 	        switch(operator)
 	        {
-	            case '+':
+	            case '1':
 	                result = first + second;
 	                break;
-	            case '-':
+	            case '2':
 	                result = first - second;
 	                break;
-	            case '*':
+	            case '3':
 	                result = first * second;
 	                break;
-	            case '/':
+	            case '4':
 	                result = first / second;
 	                break;
 	            // operator doesn't match any case constant (+, -, *, /)
